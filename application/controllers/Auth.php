@@ -106,7 +106,7 @@ class Auth extends CI_Controller
 			//return (bool)preg_match('', $field);
 		}
 
-		$this->form_validation->set_rules('phone_number', 'Phone_number', 'required|trim|max_length[15]|is_unique[data_account.telepon_takmir]|my_func', [
+		$this->form_validation->set_rules('phone_number', 'Phone_number', 'required|trim|max_length[15]|is_unique[user.telepon]|my_func', [
 			'is_unique' => "Nomor Telepon telah digunakan",
 			'max_length' => "Nomor Telepon terlalu panjang",
 			'my_func' => "Nomor Telepon tidak diawali +62"
