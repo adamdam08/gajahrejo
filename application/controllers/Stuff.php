@@ -72,7 +72,7 @@ class Stuff extends CI_Controller
 
 					// Konfigurasi Upload
 					$config['upload_path']          = './snippets/img/barang/';
-					$config['allowed_types']        = 'gif|jpg|png|pdf';
+					$config['allowed_types']        = 'gif|jpg|png|pdf|jfif';
 
 					// Memanggil Library Upload dan Setting Konfigurasi
 					$this->load->library('upload', $config);
